@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <nav class="main-nav">
+            <img src="Sonder (1).png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="openPopup('about'); return false;">About</a></li>
+                <li><a href="#" onclick="openPopup('contact'); return false;">Contacts</a></li>
+                
+            </ul>
+        </nav>
+        <h1>The Sound <br> of Sonder</h1>
+        <button type="button" onclick="openMusicPlayer()">Play Some Music</button>
+        <div class="indicator">
+            <span></span>
+            <span></span>
+            <span class="active"></span>
+            
+        </div>
+        <div class="cta">
+    <p> — a music player made for those who live in their own rhythm. It’s more than just listening; it’s about hearing yourself. 
+        <br>Every beat, every lyric, every moment becomes personal. Press <i>Play Some Music</i>, and let the sound define the journey.</p>
+    </div>
+    </div>
+    
+    <!-- About Overlay -->
+    <div class="overlay" id="about-overlay">
+        <div class="popup">
+            <button class="close-btn" onclick="closePopup('about')">&times;</button>
+            <h2>About</h2>
+            <div class="popup-content">
+                <!-- ADD YOUR ABOUT CONTENT HERE -->
+                <p><p>Sonder is a personal music player project built entirely with the knowledge I’ve gained so far in HTML, CSS, and JavaScript. What started as a simple experiment became a creative space where I could blend design, functionality, and sound into one experience.</p>
+
+
+<br><p>This music player is more than just buttons and playlists — it’s a reflection of my growth as a developer. From writing the first lines of code to styling every detail, Sonder represents what I can build with passion and patience.</p>
+
+
+<br><p>Whether you use it to relax, focus, or get lost in your own rhythm, I hope Sonder becomes a place where your sound feels personal.</p>
+
+
+<br><p>This is just the beginning — and there's more to come.</p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Overlay -->
+    <div class="overlay" id="contact-overlay">
+        <div class="popup">
+            <button class="close-btn" onclick="closePopup('contact')">&times;</button>
+            
+            <div class="popup-content-contacts">
+    <h3>Contact Details</h3>
+    
+    <img src="mirror.jpg" class="prof">
+
+    <p style="margin-top: 20px; font-size: 16px; line-height: 1.8;">
+        <strong>Facebook:</strong> 
+        <a href="https://www.facebook.com/joemariecapuyanjr/" target="_blank" style="color: #64a886; text-decoration: none;">
+            facebook.com/joemariecapuyanjr
+        </a>
+        <br>
+
+        <strong>Instagram:</strong> 
+        <a href="https://www.instagram.com/choemali/" target="_blank" style="color: #64a886; text-decoration: none;">
+            @choemali
+        </a>
+        <br>
+
+        <strong>Email:</strong> 
+        <a href="mailto:joemarie_capuyan@yahoo.com" style="color: #64a886; text-decoration: none;">
+            joemarie_capuyan@yahoo.com
+        </a>
+    </p>
+</div>
+
+        </div>
+    </div>
+
+   
+
+    <!-- Music Player Container -->
+    <div class="music-player-container" id="music-player">
+        <button class="close-music-btn" onclick="closeMusicPlayer()">&times;</button>
+        
+        <!-- Music Player Content -->
+        <div id="player-main-container">
+            <div id="player-left-panel">
+                
+                <h1 id="player-app-title"></h1>
+                <div class="player-artist-list">
+                    <div class="player-artist-button selected" data-playlist="favorites">
+                        Oasis
+                    </div>
+                    <div class="player-artist-button" data-playlist="rock">
+                        Juan Karlos
+                    </div>
+                    <div class="player-artist-button" data-playlist="pop">
+                        My Chemical Romance
+                    </div>
+                    <div class="player-artist-button" data-playlist="chill">
+                        Syd Hartha
+                    </div>
+                    <div class="player-artist-button" data-playlist="workout">
+                        Radiohead
+                    </div>
+                </div>
+            </div>
+            <div id="player-content-area">
+                <div id="player-album-section">
+                    <div id="player-album-artwork">
+                        <div id="player-placeholder-art">♪</div>
+                    </div>
+                    <div id="player-album-info">
+                        <p class="player-label">Artist:</p>
+                        <h2 id="player-artist-name">Oasis</h2>
+                        <p id="player-track-count">5 tracks</p>
+                    </div>
+                </div>
+                <div id="player-tracklist">
+                    <table id="player-songs-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Track</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="player-track-rows">
+                            <!-- Tracks will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Player with HTML5 Audio -->
+        <div id="player-music-player">
+            <div id="player-current-track-info">
+                <div id="player-mini-artwork">♪</div>
+                <div id="player-track-details">
+                    <div id="player-current-title">Select a track to play</div>
+                    <div id="player-current-artist">-</div>
+                </div>
+            </div>
+            <audio id="player-main-audio" controls preload="metadata">
+                <source id="player-audio-source" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

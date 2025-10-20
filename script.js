@@ -197,4 +197,5 @@ function initializeMusicPlayer() {
 
     // Initialize with first playlist
     loadPlaylist(currentPlaylist);
+
 }

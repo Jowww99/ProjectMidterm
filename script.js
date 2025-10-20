@@ -47,7 +47,7 @@ function closeMusicPlayer() {
     document.getElementById('music-player').classList.remove('active');
 }
 
-// ========== MUSIC PLAYER CODE ==========
+// ========== MUSIC PLAYER ==========
 
 // Music data
 const musicData = {
@@ -103,7 +103,9 @@ const musicData = {
             { title: "No Surprises", artist: "Radiohead", duration: "3:47", src: "ns.mp3" },
             { title: "Fake Plastic Trees", artist: "Radiohead", duration: "4:52", src: "fps.mp3" },
             { title: "High and Dry", artist: "Radiohead", duration: "4:19", src: "hidry.mp3" },
-            { title: "Let Down", artist: "Radiohead", duration: "4:59", src: "letdown.mp3" }
+            { title: "Let Down", artist: "Radiohead", duration: "4:59", src: "letdown.mp3" },
+            { title: "Past Lives", artist: "Radiohead", duration: "1:46", src: "pastlives.mp3" }
+
         ]
     }
 };

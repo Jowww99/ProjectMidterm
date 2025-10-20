@@ -79,7 +79,12 @@
 .cta{
     position: absolute;
 }
-
+.site-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    padding: 5px;
+}
 
 
 /* ========== POPUP OVERLAY STYLES ========== */
@@ -499,4 +504,5 @@ audio::-webkit-media-controls-volume-slider {
     #player-app-title {
         font-size: 18px;
     }
+
 }

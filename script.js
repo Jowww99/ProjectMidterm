@@ -57,7 +57,7 @@ const musicData = {
         songs: [
             { title: "Wonderwall", artist: "Oasis", duration: "4:18", src: "Wonderwall (Remastered).mp3" },
             { title: "Stop Crying Your Heart Out", artist: "Oasis", duration: "5:03", src: "Stop Crying Your Heart Out (Remastered).mp3" },
-            { title: "Don't Look Back in Anger", artist: "Oasis", duration: "4:47", src: "Oasis - Dont Look Back in Anger.mp3" },
+            { title: "Don't Look Back in Anger", artist: "Oasis", duration: "4:47", src: "dontlook.mp3" },
             { title: "Champagne Supernova", artist: "Oasis", duration: "7:29", src: "Champagne Supernova (Remastered).mp3" },
             { title: "Married With Children", artist: "Oasis", duration: "3:15", src: "Married With Children (Remastered).mp3" }
         ]
@@ -199,3 +199,4 @@ function initializeMusicPlayer() {
     loadPlaylist(currentPlaylist);
 
 }
+
